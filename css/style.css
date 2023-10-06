@@ -373,6 +373,8 @@ address {
 
 }
 .feature{
+  display: flex;
+  justify-content: center;
   background-color: #F5F4FA;
   padding: 25px 100px;
   border-radius: 4px;
