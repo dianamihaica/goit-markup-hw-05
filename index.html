@@ -44,7 +44,7 @@
     <main>
         <section class="sectionone">
             <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-            <button class="button-request" type="button">Request our service</button>
+            <button data-modal-open class="button-request" type="button">Request our service</button>
         </section>
         <section >
            <ul class="section-second">
@@ -101,6 +101,7 @@
                 What we do </h2>
             <ul class="section-third" >
                <li><img src="./images/images1.jpg" alt="Using the computer" width="370"; height="294";/></li> 
+               <div class="box">1</div>
                 <li><img src="./images/images2.jpg" alt="Using the phone" width="370"; height= "294";/></li>
                <li> <img src="./images/images3.jpg" alt="Uning the tablet" width= "370"; height= "294";/></li>
             </ul>
@@ -330,5 +331,16 @@
             </div>
         </div>
     </footer>
+    <!--Request our service Modal-->
+    <div class="modal is-hidden" data-modal>
+         <div class="modal-content">
+              <button class="close-btn" data-modal-close>&times;</button>
+              
+         </div>
+
+    </div>
+    <script src="./js/modal.js">
+
+    </script>
 </body>
 </html>
