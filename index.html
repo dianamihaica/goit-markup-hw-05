@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+   
     <header class="global-header">
         <a class="logo" href="#"
       ><span class="logo-first">Web</span>
@@ -100,10 +101,28 @@
             <h2>
                 What we do </h2>
             <ul class="section-third" >
-               <li><img src="./images/images1.jpg" alt="Using the computer" width="370"; height="294";/></li> 
-               <div class="box">1</div>
-                <li><img src="./images/images2.jpg" alt="Using the phone" width="370"; height= "294";/></li>
-               <li> <img src="./images/images3.jpg" alt="Uning the tablet" width= "370"; height= "294";/></li>
+               <li>
+                <div class="thumb">
+                    <img src="./images/images1.jpg" alt="Using the computer" width="370"; height="294";/>
+                    <p class="label">DESKTOP APPS</p>
+                </div>
+               </li> 
+                <li>
+                    <div class="thumb">
+                        <img src="./images/images2.jpg" alt="Using the phone" width="370"; height= "294";/>
+                        <p class="label">
+                            MOBILE APPS
+                        </p>
+                    </div>
+                </li>
+               <li> 
+                <div class="thumb">
+                    <img src="./images/images3.jpg" alt="Uning the tablet" width= "370"; height= "294";/>
+                    <p class="label">
+                        DESIGN SOLUTIONS
+                    </p>
+                </div>
+               </li>
             </ul>
         </section>
         <section>
@@ -333,12 +352,13 @@
     </footer>
     <!--Request our service Modal-->
     <div class="modal is-hidden" data-modal>
-         <div class="modal-content">
-              <button class="close-btn" data-modal-close>&times;</button>
-              
-         </div>
+        <div class="modal-content">
+             <svg class="close-btn" data-modal-close>
+              <use href="./symbol-defs.svg#icon-close" />
+             </svg>
+        </div>
 
-    </div>
+   </div>
     <script src="./js/modal.js">
 
     </script>

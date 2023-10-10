@@ -200,27 +200,20 @@ letter-spacing: 1.08px;
   color: #ffffff;
   background-color: #188ce8;
 }
-/* .box:nth-child(1){
-  top:20px;
-  left:130px;
-  background-color: white;
-  z-index: 2;
-} */
+
 .box{
   position: relative;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
- background-color: #188ce8;
+  width: 370px;
+  height: 294px;
  overflow: hidden;
 }
-/* .overlay{
+.overlay{
   position: absolute;
   top:0;
   left:0;
   width: 100%;
   height: 100%;
-  background-color: #212121;
+  background-color:#2196F3E5;
   transform: translateY(100%);
   transition: var(--transition);
 }
@@ -228,17 +221,22 @@ letter-spacing: 1.08px;
   transform: translateY(0);
 }
 .overlay p {
-  color: #fff;
-  padding: 10px;
-  margin: 0;
+  font-weight: 400;
   font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 3%;
+  color: #fff;
+  height: 140px;
+  padding: 45px 40px 91px 24px;
+  text-align: left;
+ 
 }
 .overlay code {
   display: inline-block;
   padding: 2px 4px;
   border-radius: 2px;
   background-color: #fff;
-  color: #2a2a2a;} */
+  color: #2a2a2a;}
 a{
     text-decoration:none;
     color: #000;
@@ -578,24 +576,24 @@ address {
 }
 .modal{
   position: fixed;
-  width: 528px;
-  height: 581px;
+  width: 500px;
   flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.2);
   top: 0;
   left:0;
   display: flex;
   justify-content: center;
   align-items:center ;
-  background-color: #fff;
+  border: 1px solid  rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  margin-left: 600px;
+  margin-top: 200px;
 }
 .modal-content{
   background-color: #fff;
   padding: 20px;
   width: 528px;
   height: 581px;
-  display: flex;
-  justify-content: center;
-  align-items:center ;
 }
 .close-btn{
   border: 1px solid #000;
@@ -604,8 +602,38 @@ address {
   position: absolute;
   top:0;
   right:0;
-
+  width: 18px;
+height: 18px;
+flex-shrink: 0;
+  
 }
 .is-hidden{
   visibility: hidden;
+  cursor: pointer;
+}
+
+.thumb{
+  position: relative;
+  overflow: hidden;
+}
+.thumb .label{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 8px 16px;
+  border-bottom-left-radius: 4px;
+  height: 50px;
+  width: 370px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 'Roboto';
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 16.41px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color:#fff;
 }
